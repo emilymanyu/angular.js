@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Angular.js by emilymanyu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Angular.js</h1>
+      <h2 class="project-tagline">HTML enhanced for web apps</h2>
+      <a href="https://github.com/emilymanyu/angular.js" class="btn">View on GitHub</a>
+      <a href="https://github.com/emilymanyu/angular.js/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/emilymanyu/angular.js/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="angularjs-" class="anchor" href="#angularjs-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>AngularJS <a href="https://travis-ci.org/angular/angular.js"><img src="https://travis-ci.org/angular/angular.js.svg?branch=master" alt="Build Status"></a>
+</h1>
+
+<p>AngularJS lets you write client-side web applications as if you had a smarter browser.  It lets you
+use good old HTML (or HAML, Jade and friends!) as your template language and lets you extend HTML’s
+syntax to express your application’s components clearly and succinctly.  It automatically
+synchronizes data from your UI (view) with your JavaScript objects (model) through 2-way data
+binding. To help you structure your application better and make it easy to test, AngularJS teaches
+the browser how to do dependency injection and inversion of control.</p>
+
+<p>It also helps with server-side communication, taming async callbacks with promises and deferreds,
+and it makes client-side navigation and deeplinking with hashbang urls or HTML5 pushState a
+piece of cake. Best of all? It makes development fun!</p>
+
+<ul>
+<li>Web site: <a href="https://angularjs.org">https://angularjs.org</a>
+</li>
+<li>Tutorial: <a href="https://docs.angularjs.org/tutorial">https://docs.angularjs.org/tutorial</a>
+</li>
+<li>API Docs: <a href="https://docs.angularjs.org/api">https://docs.angularjs.org/api</a>
+</li>
+<li>Developer Guide: <a href="https://docs.angularjs.org/guide">https://docs.angularjs.org/guide</a>
+</li>
+<li>Contribution guidelines: <a href="https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md">CONTRIBUTING.md</a>
+</li>
+<li>Dashboard: <a href="https://dashboard.angularjs.org">https://dashboard.angularjs.org</a>
+</li>
+</ul>
+
+<h5>
+<a id="looking-for-angular-2-beta-go-here-httpsgithubcomangularangular" class="anchor" href="#looking-for-angular-2-beta-go-here-httpsgithubcomangularangular" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Looking for Angular 2 (beta)? Go here: <a href="https://github.com/angular/angular">https://github.com/angular/angular</a>
+</h5>
+
+<h2>
+<a id="building-angularjs" class="anchor" href="#building-angularjs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Building AngularJS</h2>
+
+<p><a href="https://docs.angularjs.org/misc/contribute">Once you have set up your environment</a>, just run:</p>
+
+<pre><code>grunt package
+</code></pre>
+
+<h2>
+<a id="running-tests" class="anchor" href="#running-tests" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Running tests</h2>
+
+<p>To execute all unit tests, use:</p>
+
+<pre><code>grunt test:unit
+</code></pre>
+
+<p>To execute end-to-end (e2e) tests, use:</p>
+
+<pre><code>grunt package
+grunt test:e2e
+</code></pre>
+
+<p>To learn more about the grunt tasks, run <code>grunt --help</code></p>
+
+<h2>
+<a id="contribute--develop" class="anchor" href="#contribute--develop" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contribute &amp; Develop</h2>
+
+<p>We've set up a separate document for our <a href="https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md">contribution guidelines</a>.</p>
+
+<p><a href="https://github.com/igrigorik/ga-beacon"><img src="https://ga-beacon.appspot.com/UA-8594346-11/angular.js/README.md?pixel" alt="Analytics"></a></p>
+
+<h2>
+<a id="what-to-use-angularjs-for-and-when-to-use-it" class="anchor" href="#what-to-use-angularjs-for-and-when-to-use-it" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What to use AngularJS for and when to use it</h2>
+
+<p>AngularJS is the next generation framework where each component is designed to work with every other component in an interconnected way like a well-oiled machine. AngularJS is JavaScript MVC made easy and done right. (Well it is not really MVC, read on, to understand what this means.)</p>
+
+<h4>
+<a id="mvc-no-mv-done-the-right-way" class="anchor" href="#mvc-no-mv-done-the-right-way" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>MVC, no, MV* done the right way!</h4>
+
+<p>MVC, short for Model-View-Controller, is a design pattern, i.e. how the code should be organized and how the different parts of an application separated for proper readability and debugging. Model is the data and the database. View is the user interface and what the user sees. Controller is the main link between Model and View. These are the three pillars of major programming frameworks present on the market today. On the other hand AngularJS works on MV*, short for Model-View-<em>Whatever</em>. The <em>Whatever</em> is AngularJS's way of telling that you may create any kind of linking between the Model and the View here.</p>
+
+<p>Unlike other frameworks in any programming language, where MVC, the three separate components, each one has to be written and then connected by the programmer, AngularJS helps the programmer by asking him/her to just create these and everything else will be taken care of by AngularJS.</p>
+
+<h4>
+<a id="interconnection-with-html-at-the-root-level" class="anchor" href="#interconnection-with-html-at-the-root-level" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Interconnection with HTML at the root level</h4>
+
+<p>AngularJS uses HTML to define the user's interface. AngularJS also enables the programmer to write new HTML tags (AngularJS Directives) and increase the readability and understandability of the HTML code. Directives are AngularJS’s way of bringing additional functionality to HTML. Directives achieve this by enabling us to invent our own HTML elements. This also helps in making the code DRY (Don't Repeat Yourself), which means once created, a new directive can be used anywhere within the application.</p>
+
+<h4>
+<a id="data-handling-made-simple" class="anchor" href="#data-handling-made-simple" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Data Handling made simple</h4>
+
+<p>Data and Data Models in AngularJS are plain JavaScript objects and one can add and change properties directly on it and loop over objects and arrays at will.</p>
+
+<h4>
+<a id="two-way-data-binding" class="anchor" href="#two-way-data-binding" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Two-way Data Binding</h4>
+
+<p>One of AngularJS's strongest features. Two-way Data Binding means that if something changes in the Model, the change gets reflected in the View instantaneously, and the same happens the other way around. This is also referred to as Reactive Programming, i.e. suppose <code>a = b + c</code> is being programmed and after this, if the value of <code>b</code> and/or <code>c</code> is changed then the value of <code>a</code> will be automatically updated to reflect the change. AngularJS uses its "scopes" as a glue between the Model and View and makes these updates in one available for the other.</p>
+
+<h4>
+<a id="less-written-code-and-easily-maintainable-code" class="anchor" href="#less-written-code-and-easily-maintainable-code" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Less Written Code and Easily Maintainable Code</h4>
+
+<p>Everything in AngularJS is created to enable the programmer to end up writing less code that is easily maintainable and readable by any other new person on the team. Believe it or not, one can write a complete working two-way data binded application in less than 10 lines of code. Try and see for yourself!</p>
+
+<h4>
+<a id="testing-ready" class="anchor" href="#testing-ready" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Testing Ready</h4>
+
+<p>AngularJS has Dependency Injection, i.e. it takes care of providing all the necessary dependencies to its controllers whenever required. This helps in making the AngularJS code ready for unit testing by making use of mock dependencies created and injected. This makes AngularJS more modular and easily testable thus in turn helping a team create more robust applications.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/emilymanyu/angular.js">Angular.js</a> is maintained by <a href="https://github.com/emilymanyu">emilymanyu</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
